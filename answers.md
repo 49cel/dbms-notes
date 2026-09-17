@@ -4,7 +4,7 @@
 
 - - -
 
-- 1. **define data and information with examples**
+- q1: **define data and information with examples**
 
     data: it is a collection of raw facts, on its own data does not carry any meaning. examples: the number 45, the name "x", the date 17 sep 2026
 
