@@ -167,3 +167,62 @@
 
     a database developer handles the logical structure of a database whereas a database administrator can handle both the logical structure and physical structure of a database
 
+- - -
+
+- q16: **explain the three-level ansi/sparc architecture of a dbms with a diagram**
+
+    refer to chapter 5 for the diagram and answer
+
+- - -
+
+- q17: **what is the main objective of dbms architecture?**
+
+    to seperate the user's view of the database from the way the data is physically stored
+    in other words, users should see the database the way they want, while the dba controls how the data is really stored
+
+- - -
+
+- q18: **explain the external, conceptual and internal levels**
+
+    there are three levels in the dbms architecture, each with a different purpose
+
+    1. **external level (top)**: this describes the user's view of the database. different users see only what is relevant to them. this provides a security mechanism through views
+    example: a customer's view might show: item name, price and a purchase manager's view might show: item name, item id, quantity, price
+
+    2. **conceptual level (middle)**: describes the logical structure of the whole database for all users combined. this does not define how data is physically stored. it just defines what type of data can be stored, what type of data cannot be stored, the relationships between tables etc.
+
+    3. **internal level (bottom)**: this level describes how data is physically stored, only the database administrator can work at this level
+
+- - -
+
+- q19: **give an example of how the external level provides security**
+
+    since the external level splits the table into views which are then assigned to users depending on their use case, it seperates the confidential data from the general data and only puts forward relevant data which is required by said user and hides the data which might be dangerous to reveal publicly and is handled by the database administrator instead
+
+- - - 
+
+- q20: **what is data independence?**
+
+    data independence means that upper levels of the dbms architecture are not affected by changes made at lower levels
+
+- - -
+
+- q21: **explain logical data independence with an example**
+
+    it means that changes made at the conceptual level do not require changes at the external level 
+    example: if we add a new table at the conceptual level, existing views will not be affected and will still work fine and they need not be rewritten 
+
+- - -
+
+- q22: **explain physical data independence with an example**
+
+    it means that changes made at the internal level do not require changes at the conceptual level
+    example: if we add a new index at the internal level, the conceptual level (tables and constraints) does not need to change, only the performance is affected as there will be more data to search through
+
+- - - 
+
+- q23: **differentiate between logical data independence and physical data independence**
+
+    ts is just a mix of q21 and q22, just frame it as if you're differentiating them.
+
+
