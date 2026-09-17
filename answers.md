@@ -12,5 +12,5 @@
 
 - - -
 
-- 2. **what is a data store? name three kinds**
+- q2: **what is a data store? name three kinds**
 
